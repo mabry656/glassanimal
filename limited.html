@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+   <link rel="stylesheet" href="limited.css">   
+</head>
+    
+<body>
+    
+<div class="title">LIMITED EDITION</div> 
+    
+<div class="gameboy">
+<img src="gameboy.png"> 
+</div>
+    
+<div class="hats">
+<a href="gahats.html"><img src="hats.png"></a> 
+</div>
+    
+<div class="tshirts"><a href="tshirts.html">
+<img src="shirts.png"></a>
+</div>
+    
+<div class="small"><a href="smallgifts.html">
+<img src="gifts.png"></a>
+</div>
+
+    <div class="limited">
+    <img src="ltdstr8.png">
+    </div>
+    
+    <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+      
+      var myVideo = document.getElementById("bandVideos"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+                 }
+   </script>
+    
+<!--id for the audio file-->
+    <audio id="audio" src="Super%20Mario%20coin%20sound%20(!).mp3" ></audio>
+    
+    <!--NAV CODE-->
+<!--also makes noise for button click-->
+<div class="nav"><a href="#openModal"><img src="merchnav.png" value="PLAY"  onclick="play()"> </a></div> 
+
+<div id="openModal" class="modalDialog"> 
+	<div>
+		<a href="#close" title="Close" class="close"><img src="navx.png">
+        </a>
+      
+
+<!--end noise-->
+        
+  <div class="menutext">
+     <h2>MENU</h2>
+    
+        <ul>
+        <li><a href="gahome.html">
+            Home </a></li>
+        <li><a href="gavideos.html">Videos</a> </li>
+        <li><a href="gaalbums.html">Albums</a></li>
+        <li><a href="gatour.HTML">Tour Dates </a> </li>
+        <li><a href="gamerch.html">
+        Merch  
+        </a>   
+        </li>
+        <li><a href="gamembers.html">  Members</a></li>
+        </ul>
+           
+    </div>      
+       
+		
+	</div>
+</div>
+<!--END NAV CODE-->
+    
+<div class="keypad">
+<img src="keypad.png">   
+</div>
+    
+<div class="up">
+<img src="up.png">   
+</div>
+    
+<div class="down">
+<img src="down.png">
+</div>
+    
+<div class="left">
+  <a class="prev" onclick="plusSlides(-1)"><img src="left.png"> 
+</a>
+  
+</div>
+    
+<div class="right">
+    <a class="next" onclick="plusSlides(1)"><img src="right.png">
+    </a>
+</div>
+    
+<div class="add">
+<img src="addtocart.png">  
+</div>
+    
+<!--slideshow stuff-->   
+<meta name="viewport" content="width=408px, initial-scale=1">
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="sc14.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="sc15.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="sc16.png" style="width:100%">
+  </div>
+    
+     <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="sc17.png" style="width:100%">
+  </div>
+    
+     <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="sc20.png" style="width:100%">
+  </div>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="sc14.png" style="width:100%" onclick="currentSlide(1)" alt="POSTCARD SET $10">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sc15.png" style="width:100%" onclick="currentSlide(2)" alt="A2 PINEAPPLE POSTER $7">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sc16.png" style="width:100%" onclick="currentSlide(3)" alt="HOW TO BE A HUMAN BEING POSTER $10">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="sc17.png" style="width:100%" onclick="currentSlide(4)" alt="LAPTOP STICKER SET $5">
+    </div>
+      <div class="column">
+      <img class="demo cursor" src="sc20.png" style="width:100%" onclick="currentSlide(5)" alt="PATCH SET $10">
+    </div>
+    
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>    
+
+    
+</body>
+</html>

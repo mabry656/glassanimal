@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+   <link rel="stylesheet" href="gahats.css"> 
+    
+<div class="title">HATS</div>   
+</head>
+    
+<body>
+    
+<div class="gameboy">
+<img src="gameboy.png"> 
+</div>
+    
+<div class="hats">
+<img src="hatstr8.png">   
+</div>
+    
+<div class="tshirts"><a href="tshirts.html">
+<img src="shirts.png"></a>
+</div>
+    
+<div class="small">
+<a href="smallgifts.html"><img src="gifts.png"></a> 
+</div>
+
+<div class="limited"><a href="limited.html">
+ <img src="ltd.png"></a>
+    
+    <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+      
+      var myVideo = document.getElementById("bandVideos"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+                 }
+   </script>
+    
+<!--id for the audio file-->
+    <audio id="audio" src="Super%20Mario%20coin%20sound%20(!).mp3" ></audio>
+    
+    <!--NAV CODE-->
+<!--also makes noise for button click-->
+<div class="nav"><a href="#openModal"><img src="merchnav.png" value="PLAY"  onclick="play()"> </a></div> 
+
+<div id="openModal" class="modalDialog"> 
+	<div>
+		<a href="#close" title="Close" class="close"><img src="navx.png">
+        </a>
+        
+
+<!--end noise-->
+        
+  <div class="menutext">
+     <h2>MENU</h2>
+    
+        <ul>
+        <li><a href="gahome.html">
+            Home </a></li>
+        <li><a href="gavideos.html">Videos</a> </li>
+        <li><a href="gaalbums.html">Albums</a></li>
+        <li><a href="gatour.HTML">Tour Dates </a> </li>
+        <li><a href="gamerch.html">
+        Merch  
+        </a>   
+        </li>
+        <li><a href="gamembers.html">  Members</a></li>
+        </ul>
+           
+    </div>      
+       
+		
+	</div>
+</div>
+<!--END NAV CODE-->
+    
+</div>
+<div class="keypad">
+<img src="keypad.png">   
+</div>
+    
+<div class="up">
+<img src="up.png">   
+</div>
+    
+<div class="down">
+<img src="down.png">
+</div>
+    
+<div class="left">
+  <a class="prev" onclick="plusSlides(-1)"><img src="left.png"> 
+</a>
+  
+</div>
+    
+<div class="right">
+    <a class="next" onclick="plusSlides(1)"><img src="right.png">
+    </a>
+</div>
+    
+<div class="add">
+<img src="addtocart.png">  
+</div>
+    
+<!--slideshow stuff-->   
+<meta name="viewport" content="width=408px, initial-scale=1">
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 3</div>
+    <img src="sc1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 3</div>
+    <img src="sc12.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 3</div>
+    <img src="sc13.png" style="width:100%">
+  </div>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="sc1.png" style="width:100%" onclick="currentSlide(1)" alt="PINEAPPLE BOBBLE HAT $20">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sc12.png" style="width:100%" onclick="currentSlide(2)" alt="PINEAPPLE WHITE CAP $15">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sc13.png" style="width:100%" onclick="currentSlide(3)" alt="PINEAPPLE CORAL CAP $15">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>

@@ -1,0 +1,263 @@
+body {
+    background-image: url(wallpaper.png);
+    background-repeat: repeat-y;
+    width: 1600;
+    height: 899;
+}
+
+.title {
+    position: absolute;
+    top: 95px;
+    left: 560px;
+    font-family: eight-bit madness;
+    color: white;
+    font-size: 25pt;
+    z-index: 500;
+}
+
+.gameboy {
+    position: absolute;
+    left: 350px;
+    top: 70px;
+    z-index: 50;
+}
+
+.hats {
+   position: absolute;
+    top: 150px;
+}
+
+.tshirts {
+    position: absolute;
+    top: 550px;
+}
+
+.small {
+    position: absolute;
+    top: 150px;
+    left: 1020px
+}
+
+.limited {
+ position: absolute;
+    top: 50px;
+    left: 350px;
+}
+
+.nav {
+    position: absolute;
+    right: 400px;
+    top: 650px;
+    z-index: 300;
+}
+
+/*NAV CODE*/
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 10ms ease-in;
+	-moz-transition: opacity 10ms ease-in;
+	transition: opacity 10ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background-image: url(menu.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+	
+}
+
+.menutext {
+    text-align: center;
+    font-size: 30pt;
+    line-height: 130%;
+    
+}
+
+.menutext h2 {
+    margin: 0px;
+    text-align: center;
+    font-family: eight-bit madness;
+    
+}
+
+.menutext li {
+    list-style: none;
+    font-family: eight-bit madness;
+
+}
+
+.menutext ul {
+    padding-left: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #bc7325;
+}
+
+a:active {
+    color: #e59c4e;
+}
+
+/*END NAV CODE*/
+
+.keypad {
+    position: absolute;
+    right: 800px;
+    top: 645px;
+    z-index: 300;
+}
+
+.up {
+    position: absolute;
+    top: 660px;
+    left: 456px;
+    z-index: 400;
+}
+
+.down {
+    position: absolute;
+    top: 747px;
+    left: 456px;
+    z-index: 400;
+}
+
+.left {
+    position: absolute;
+    top: 704px;
+    left: 415px;
+    z-index: 400;
+}
+
+.right {
+    position: absolute;
+    top: 704px;
+    left: 510px;
+    z-index: 400;
+}
+
+.add {
+    position: absolute;
+    top: 665px;
+    left: 700px;
+    z-index: 300;
+}
+
+/**SLIDESHOW CODE HERE!!*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+width: 27%;
+top: 120px;
+left: 480px;
+    
+z-index: 600;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+font-family: eight-bit madness;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+font-family: eight-bit madness;
+font-size: 20pt;
+  background-color: #C84866;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

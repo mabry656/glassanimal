@@ -1,0 +1,131 @@
+body {
+    background-image:url(tour.png), url(wallpaper.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 1600;
+    height: 899;
+}
+
+.venues {
+    position: absolute;
+    top: 270px;
+    left: 585px;
+    z-index: 300;
+    overflow: auto;
+    height: 250px;
+    width: 200px;
+    font-size: 40px;
+    text-align:center;
+    font-family: eight-bit madness;
+    color: orange;
+}
+
+.dates {
+     position: absolute;
+    top: 270px;
+    left: 395px;
+    z-index: 300;
+    overflow: auto;
+    height: 250px;
+    width: 200px;
+    font-size: 40px;
+    text-align:center;
+    font-family: eight-bit madness;
+    color: cyan;
+}
+
+.cities {
+     position: absolute;
+    top: 270px;
+    left: 800px;
+    z-index: 300;
+    overflow: auto;
+    height: 220px;
+    width: 200px;
+    font-size: 40px;
+    text-align:center;
+    font-family: eight-bit madness;
+    color: cyan;
+}
+
+.nav {
+    position: absolute;
+    top: 630px;
+    left: 500px;
+    z-index: 350;
+}
+
+/*NAV CODE*/
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 10ms ease-in;
+	-moz-transition: opacity 10ms ease-in;
+	transition: opacity 10ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background-image: url(menu.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+	
+}
+
+.menutext {
+    text-align: center;
+    font-size: 30pt;
+    line-height: 130%;
+    
+}
+
+.menutext h2 {
+    margin: 0px;
+    text-align: center;
+    font-family: eight-bit madness;
+    
+}
+
+.menutext li {
+    list-style: none;
+    font-family: eight-bit madness;
+
+}
+
+.menutext ul {
+    padding-left: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #bc7325;
+}
+
+a:active {
+    color: #e59c4e;
+}
+
+/*END NAV CODE*/

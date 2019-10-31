@@ -1,0 +1,142 @@
+
+body {
+    background-image: url(wallpaper.png);
+    background-repeat: no-repeat;
+    width: 1600;
+    height: 899;
+}
+.walkman {
+    position: absolute;
+    z-index: 100;
+}
+.walkmantran {
+    position: absolute;
+    z-index: 150;
+}
+.howtobe {
+    position: absolute;
+    right: 390px;
+    top: 130px;
+}
+.remixes {
+    position: absolute;
+    right: 20px;
+    top: 130px;
+}
+.zaba {
+    position: absolute;
+    right: 390px;
+    top: 400px;
+}
+
+.leaflings {
+    position: absolute;
+    right: 20px;
+    top: 400px;
+}
+
+.nav {
+    position: absolute;
+    left: 250px;
+    top: 185px;
+    z-index: 300;
+}
+.stop {
+    position: absolute;
+    left: 290px;
+    top: 185px;
+    z-index: 300;
+}
+.back {
+    position: absolute;
+    left: 330px;
+    top: 185px;
+    z-index: 300;
+}
+.play{
+    position: absolute;
+    left: 365px;
+    top: 185px;
+    z-index: 300;
+}
+.forward {
+    position: absolute;
+    left: 405px;
+    top: 185px;
+    z-index: 300;
+}
+
+/*NAV CODE*/
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 10ms ease-in;
+	-moz-transition: opacity 10ms ease-in;
+	transition: opacity 10ms ease-in;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background-image: url(menu.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+	
+}
+
+.menutext {
+    text-align: center;
+    font-size: 30pt;
+    line-height: 130%;
+    
+}
+
+.menutext h2 {
+    margin: 0px;
+    text-align: center;
+    font-family: eight-bit madness;
+    
+}
+
+.menutext li {
+    list-style: none;
+    font-family: eight-bit madness;
+
+}
+
+.menutext ul {
+    padding-left: 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #bc7325;
+}
+
+a:active {
+    color: #e59c4e;
+}
+
+/*END NAV CODE*/

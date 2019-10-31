@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+   <link rel="stylesheet" href="gavideos.css">   
+    
+</head>
+<body>  
+    <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+      
+      var myVideo = document.getElementById("bandVideos"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+                 }
+   </script>
+    
+    <!--id for the audio file-->
+    <audio id="audio" src="Super%20Mario%20coin%20sound%20(!).mp3" ></audio>
+    
+    
+<div class="livingroom">
+    <img src="livingroom.png"> 
+    </div>
+
+<div class="video">
+   <video id="bandVideos" width="488" height="452" controls poster="porksodat.png">
+  <source src="y2mate.com%20-%20glass_animals_pork_soda_official_video_8RkJhJcfOnc_1080p.mp4" type="video/mp4">
+</video>
+</div>
+    
+<div class="play">
+<img src="vidplay.png" button onclick="playVid()" type="button">
+</div>
+    
+<script> 
+var vid = document.getElementById("bandVideos"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script> 
+    
+    
+<div class="next">
+<a href="gavideos3.html"><img src="vidfw.png"></a>    
+</div>
+    
+<div class="back">
+<a href="gavideos.html"><img src="vidrew.png">
+</div>
+
+<!--NAV CODE-->
+<!--also makes noise for button click-->
+<div class="nav"><a href="#openModal"><img src="vidnav.png" value="PLAY"  onclick="play()"> </a></div> 
+
+<div id="openModal" class="modalDialog"> 
+	<div>
+		<a href="#close" title="Close" class="close"><img src="navx.png">
+        </a>
+        
+
+<!--end noise-->
+        
+  <div class="menutext">
+     <h2>MENU</h2>
+    
+        <ul>
+        <li><a href="gahome.html">
+            Home </a></li>
+        <li><a href="gavideos.html">Videos</a> </li>
+        <li><a href="gaalbums.html">Albums</a></li>
+        <li><a href="gatour.HTML">Tour Dates </a> </li>
+        <li><a href="gamerch.html">
+        Merch  
+        </a>   
+        </li>
+        <li><a href="gamembers.html">  Members</a></li>
+        </ul>
+           
+    </div>      
+       
+		
+	</div>
+</div>
+<!--END NAV CODE-->
+    
+</body>

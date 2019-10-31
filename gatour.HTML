@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+   <link rel="stylesheet" href="gatour.css">   
+    
+</head>
+    
+<body>
+
+<div class="venues">
+BROOKLYN BOWL 
+<br>
+<br>
+STANFORD STADIUM
+<br>
+<br>
+VICTORIA PARK
+<br>
+<br>
+ROYAL HOSPITAL KILMAINHAM
+<br>
+<br>    
+</div>
+    
+<div class="dates">
+MAY 18 
+<br>
+<br>
+<br>
+MAY 19
+<br>
+<br>
+<br>
+MAY 25
+<br>
+<br>
+<br>
+JUNE 1
+<br>
+<br>    
+</div>
+    
+<div class="cities">
+LAS VEGAS NV 
+<br>
+<br>
+STANFORD CA
+<br>
+<br>
+LONDON UK
+<br>
+<br>
+DUBLIN PIKE IRELAND
+<br>
+<br>    
+</div>
+    
+    <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+      
+      var myVideo = document.getElementById("bandVideos"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+                 }
+   </script>
+    
+   <!--id for the audio file-->
+    <audio id="audio" src="Super%20Mario%20coin%20sound%20(!).mp3" ></audio>
+
+    <!--NAV CODE-->
+<!--also makes noise for button click-->
+<div class="nav"><a href="#openModal"><img src="tournav.png" value="PLAY"  onclick="play()"> </a></div> 
+
+<div id="openModal" class="modalDialog"> 
+	<div>
+		<a href="#close" title="Close" class="close"><img src="navx.png">
+        </a>
+        
+
+<!--end noise-->
+        
+  <div class="menutext">
+     <h2>MENU</h2>
+    
+        <ul>
+        <li><a href="gahome.html">
+            Home </a></li>
+        <li><a href="gavideos.html">Videos</a> </li>
+        <li><a href="gaalbums.html">Albums</a></li>
+        <li><a href="gatour.HTML">Tour Dates </a> </li>
+        <li><a href="gamerch.html">
+        Merch  
+        </a>   
+        </li>
+        <li><a href="gamembers.html">  Members</a></li>
+        </ul>
+           
+    </div>      
+       
+		
+	</div>
+</div>
+<!--END NAV CODE-->
+    
+</body>
